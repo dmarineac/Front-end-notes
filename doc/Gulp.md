@@ -25,7 +25,8 @@
 4. В папке с проектом запустите команду:`npm install --save-dev gulp`
 По [ссылке](http://gulpjs.com/plugins/) можно найти все необходимые плагины:
 
-	1. Для установки введите в консоль команду с установкой, например(конкатинация файлов)`npm install --save-dev gulp-concat-css` или `npm i gulp-concat-css -D`
+	1. Для установки введите в консоль команду с установкой, например(конкатинация файлов)`npm install --save-dev gulp-concat-css` или `npm i gulp-concat-css -D` или `npm i -D gulp-concat-css`
+	    Для того что бы просмотреть какие пакеты gulp устарели можно ввести `npm outdated` и для того чтобы обновить пакеты `npm update`
 	2. создай файл *gulpfile.js* с кодом: 
        `const gulp = require('gulp');
         gulp.task('default', function() {
@@ -52,7 +53,8 @@
 
 ### Плагины(package.json):
     "gulp"
-    "gulp-cli"      //
+    "gulp-cli"
+    
 //LOCAL SERVER//    
     "browser-sync"  
     
@@ -60,11 +62,12 @@
     "gulp-pug"      //препроцессор html
     "gulp-htmlhint"     //валидация html
     "gulp-htmlmin"      //минификация html
-    "wiredep"       //подключает библиотеки
+    "wiredep"       //подключает библиотеки из bower
     "gulp-google-cdn"       //заменяет ссылки библиотек(локальные) на google cdn
 
 //CSS//
     "gulp-stylus"       //препроцессор css
+    "gulp-sass"       //препроцессор css
     "gulp-minify-css"       //минификация css
     "gulp-autoprefixer"     //автоматически расставляет префиксы в css
     "gulp-sourcemaps"       //создает sourcemaps(для облегчения разработки)

@@ -3,7 +3,6 @@
 Bower - менеджер пакетов(jquery, bootstrap,normalize.css и др.)
 
 ### Установка:
-
     npm install -g bower     //установка bower
     npm update -g bower    // обновление bower
 

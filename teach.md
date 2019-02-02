@@ -8,6 +8,7 @@
 * [IDE](doc/PHPStrome.md)
 * SPA(Single Page App), PWA(Progressive Web Apps) с использованием 
 * D3.js
+* Flux js
 * WebGL
 * REST API
 * MongoDB, MySQL
