@@ -1,5 +1,5 @@
 ### Навыки
-* [HTML5](doc/HTML.md)/[CSS3](doc/CSS.md); Bootstrap; анимация CANVAS; SVG; Paralax; CSS Modules; Знание и применение методов автоматического тестирования верстки.
+* [HTML5](doc/HTML.md)/[CSS3](doc/CSS.md); Bootstrap; анимация CANVAS; SVG; Paralax; CSS Modules; Знание и применение методов автоматического тестирования верстки.; ARIA html
 * [Оптимизация сайта](doc/optimizeSite.md)
 * [JavaScript - ECMAScript6,jQuerry, AJAX](doc/JS.md)
     * Frameworks: React/Angular/Vue/Backbone/Underscore.js
@@ -11,6 +11,7 @@
 * Flux js
 * WebGL
 * REST API
+* Threejs
 * MongoDB, MySQL
 * Кроссбраузерная, валидная семантическая верстка, работать с сетками и [адаптивом](http://adamkaplan.me/grid/); [Консоль разработчика - DevTools](doc/DevTools.md); Верстка писем; [PSD to pixel perfect responsive sites](doc/photoshop.md); SVG спрайты
 * [VCS(СКВ): Git](doc/Git.md)
@@ -23,7 +24,7 @@
 * [Что на самом деле происходит, когда пользователь вбивает в браузер адрес google.com](https://habrahabr.ru/company/htmlacademy/blog/254825/)
 
 ### Дополнительная информация
-* [Вопросы Front-end'ру на собеседовании](https://github.com/dmarineac/Front-end-Developer-Interview-Questions/tree/master/Translations/Russian), [Англ. версия](https://github.com/dmarineac/Front-end-Developer-Interview-Questions)
+* [Вопросы Front-end'ру на собеседовании](https://github.com/dmarineac/Front-end-Developer-Interview-Questions/tree/master/Translations/Russian), [Англ. версия](https://github.com/dmarineac/Front-end-Developer-Interview-Questions),[Ответы](doc/Question%20on%20Interview%20.md)
 * [Карта Веб-разработчика. Куда податься?](doc/Web_Development.pdf)
 * [Что делать, если ты новичок фронтендер?](https://wsd.events/2017/11/04/pres/youth-front)
 * [Фронтенд для новичка. Куда идти и что делать?](https://www.youtube.com/watch?v=G9hMm77B1dk&feature=youtu.be)
@@ -31,3 +32,4 @@
 * научитесь писать (и пишите!) тесты
 * императивное, функциональное, логическое, автоматное программирование
 * структуры данных и связанные с ними алгоритмы: списки, графы (в частности, деревья), битовые карты, хеш-таблицы
+* [Большой чек лист для разработчика](http://webmasters.teamdev.com/)
