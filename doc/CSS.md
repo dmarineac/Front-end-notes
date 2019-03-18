@@ -64,10 +64,17 @@ margin/padding | 2px | /*2px | 2px | 30px */ | указано только од�
 <details>
   
 * [Вы не знаете CSS](https://youtu.be/VoA-aQu75Xk)
-* [Подключение нестандартных шрифтов.](https://fontstorage.com/blog/about-font-face-part-one/)[Часть 2.](https://fontstorage.com/blog/about-font-face-part-two/) 
     * em
     * i
+<details>
+    <summary>
+        Использование внешних шрифтов
+    </summary>
     
+[Подключение нестандартных шрифтов.](https://fontstorage.com/blog/about-font-face-part-one/)[Часть 2.](https://fontstorage.com/blog/about-font-face-part-two/)
+[Поиск шрифтов:](https://www.fontsquirrel.com/tools/webfont-generator)
+![](./img/fontsSquierrel.jpg)    
+</details>
 * Что такое поток документа? Блочная модель документа
 
     **Поток документа** 
@@ -164,9 +171,10 @@ margin/padding | 2px | /*2px | 2px | 30px */ | указано только од�
     * display: inline-block
     * display: table
     * display: flex
+    * display: inline-flex
     
     #### Св-во `float`
-        Задумыавлось для обтекания блоков текстом
+        Задумывалось для обтекания блоков текстом
         Возможные значения: left, right, none
         Прижимают элемент к левому или правому краю родителя
         * Элементы со св-м float называют "плавающими"
@@ -482,7 +490,7 @@ margin/padding | 2px | /*2px | 2px | 30px */ | указано только од�
         
 ---
 Полезные ссылки:
-* [Все курсы Академии](https://htmlacademy.ru/courses) , [Тонкости верстки](https://www.coursera.org/learn/tonkosti-verstki/discussions)
+* [Все курсы Академии](https://htmlacademy.ru/courses) , [Тонкости верстки](https://www.coursera.org/learn/tonkosti-verstki/discussions), [Flexbox](https://flexbox.io/), [CssGrid](https://cssgrid.io/)
 * [Полезные ссылки и материалы](http://forum.academy/t/poleznye-ssylki-i-materialy/378)
 * Сервисы: 
     [Caniuse - проверка css св-в на кросбраузерность](https://caniuse.com/) 

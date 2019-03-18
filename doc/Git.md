@@ -8,7 +8,7 @@ git log
 branch
 merge
 rebase
-git reset
+git revert
 ````
 
 ### Настройки GIT'a

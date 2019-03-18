@@ -20,6 +20,26 @@ button(aria-label="Close" onclick="myDialog.close()) X
 `
 * .container - обертка которая может часто повторяется на странице
   .wrapper - обертка(глобальная) на странице одна
+<details>
+    <summary>
+        Тестирование на переполнение контентом
+    </summary>
+* Не используй `tabindex` больше 0. Только 0 или меньше.`tabindex="0"`
+Можно производить тестирование в ручном режиме: в инспекторе/элементс(CTRL+SHIFT+C) вставлять в элементы текст или копировать существующий. Либо ввести в консоль(CTRL+I): `document.body.contentEditable = true` . Затем тыкая курсором по тексту вводить его на сайте.
+Можно копировать не только текст, но какие-то блоки оформления. Сетка не должна ломаться при переполнении.
+</details>
+
+<details>
+    <summary>
+        Чек-лист на тестирование верстки
+    </summary>
+    
+[](https://frontendchecklist.io/)
+[](https://github.com/thedaviddias/Front-End-Checklist)
+[](https://habr.com/ru/post/114256/)
+[](https://habr.com/ru/post/319664/)
+</details>  
+
 ---
 Полезные ссылки:
 * [BEM - методолология](https://ru.bem.info/)[(два)](https://ru.bem.info/); Пространство имен
@@ -32,3 +52,4 @@ button(aria-label="Close" onclick="myDialog.close()) X
     label
 * LocalStorage
 * Критерии качества верстки: [Что такое хорошо: как мы разрабатывали критерии для оценки качества вёрстки веб-проектов](https://habrahabr.ru/company/htmlacademy/blog/254171/),[Чек-лист вёрстки. Что можно отдавать клиенту, а что надо переделывать](https://habrahabr.ru/post/114256/) 
+* [weblind.ru](https://weblind.ru/)
