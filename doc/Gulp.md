@@ -22,12 +22,12 @@
         "test": "echo \"Error: no test specified\" && exit 1",
         "gulp": "./node_modules/.bin/gulp"      //если вы пользуетесь gulp локально
       }`
-4. В папке с проектом запустите команду:`npm install --save-dev gulp`
+4. Если у вас уже сконфигурирован файл package.json в котором описаные все использованные пакеты для проекта, можете ввести `nmp install` и тогда все пакеты автоматически загрузятся. Если же нужно установить какой-то пакет, в папке с проектом запустите команду:`npm install --save-dev gulp`
 По [ссылке](http://gulpjs.com/plugins/) можно найти все необходимые плагины:
 
-	1. Для установки введите в консоль команду с установкой, например(конкатинация файлов)`npm install --save-dev gulp-concat-css` или `npm i gulp-concat-css -D` или `npm i -D gulp-concat-css`
-	    Для того что бы просмотреть какие пакеты gulp устарели можно ввести `npm outdated` и для того чтобы обновить пакеты `npm update`
-	2. создай файл *gulpfile.js* с кодом: 
+	1. Для установки введите в консоль команду с установкой, например(конкатинация файлов)`npm install --save-dev nameOfYourPackage` или `npm i nameOfYourPackage -D` или `npm i -D nameOfYourPackage`,  что бы удалить какой-то пакет: `npm rm nameOfYourPackage -D or -g`
+	    Для того что бы просмотреть какие пакеты gulp устарели можно ввести `npm outdated` и для того чтобы обновить пакеты `npm update`. Учтите что обновляя пакеты, есть вероятность что такски могут не заработать и их придется переписывать.
+	2. создай файл *gulpfile(old).js* с кодом: 
        `const gulp = require('gulp');
         gulp.task('default', function() {
           // place code for your default task here
@@ -40,7 +40,7 @@
             .pipe(concatCss("styles/bundle.css"))
             .pipe(gulp.dest('out/'));
         });`
-	4. Необходимо скопировать нижний блок кода и вставить его в *gulpfile.js* что бы выглядело примерно вот так:
+	4. Необходимо скопировать нижний блок кода и вставить его в *gulpfile(old).js* что бы выглядело примерно вот так:
        `const gulp = require('gulp');
         const concatCss = require('gulp-concat-css');
         gulp.task('default', function() {
@@ -50,13 +50,14 @@
         });`
 	5. З
 
+Что бы просмотреть все доступные команды gulp введите `gulp --tasks`
 
 ### Плагины(package.json):
     "gulp"
     "gulp-cli"
     
 //LOCAL SERVER//    
-    "browser-sync"  
+    "browser-sync"      //локальный сервер с перезагрузкой при изменениях 
     
 //HTML//
     "gulp-pug"      //препроцессор html
@@ -76,6 +77,7 @@
 //JS//
     "gulp-concat"       //конкатенация js
     "gulp-uglify"       //минификация js
+    "gulp-babel"        //позволяет функционировать вашему скрипту(написанному по новым стандартам) в старых браузерах
     "gulp-eslint"       //проверка на наличие ошибок/качества кода   
     
 //IMAGES//    
@@ -102,7 +104,7 @@
     "gulp-rename"      //переименовывает файлы
     "del"      //удаляет файлы
          
-    "gulp-plumber"
+    "gulp-plumber"      //позволяет отслеживать ошибки в таске через консоль
     "gulp-debug"        //показывает в консоли что - происходит в таске
     "through2"      //для написания собственных плагинов
 
@@ -115,3 +117,4 @@
 * [Grunt- и Gulp-таски для оптимизации производительности](https://frontender.info/performance-optimization/)
 * [Скринкаст по Gulp от loftblog](https://www.youtube.com/playlist?list=PLY4rE9dstrJwXCz1utct9b6Vub9VWQoKo)
 * [Скринкаст по Gulp от Ильи Кантора](https://www.youtube.com/playlist?list=PLDyvV36pndZFLTE13V4qNWTZbeipNhCgQ)
+* [Мультипроектный gulp-файл](https://canonium.com/articles/gulp-multi-project)

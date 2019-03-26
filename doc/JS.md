@@ -11,6 +11,7 @@
 * null(специальное значение)
 * undefined(специальное значение)
 * object(объекты)
+* promise
 </details>
 
 <details>
@@ -200,7 +201,7 @@ XMLHttpRequest - объект для работы с HTTP
         IIFE.Оператор круглые скобки(для фун-ий)
     </summary>
 
-фун-ия создасться,отработает и исчезнет
+фун-ия создастся,отработает и исчезнет
 
     (function(){
         //тело фун-ии
@@ -262,7 +263,7 @@ XMLHttpRequest - объект для работы с HTTP
 <summary>Методы работы c DOM(https://learn.javascript.ru/dom-nodes)</summary>
     <details>
         <summary>
-            querySelector   //Метод для поиска элементов(находит первый элемент, если их несколько, проще использовать его - т.к. ищет и по классам и по id).
+            querySelector()   //Метод для поиска элементов(находит первый элемент, если их несколько, проще использовать его - т.к. ищет и по классам и по id).
         </summary>
         
             document.querySelector(".user-block")
@@ -273,6 +274,8 @@ XMLHttpRequest - объект для работы с HTTP
             Для того чтобы найти все элементы исп. метод `querySelectorAll`
             
             document.querySelectorAll('nav li')
+            
+            var link = document.querrySelector(".nameOfYourCssSelector")
 </details>
     <details>
         <summary>
@@ -293,10 +296,17 @@ XMLHttpRequest - объект для работы с HTTP
             link.addEventListener('click', buttonClickHandler)  //используй фун-ию в методе без скобок
             
 </details>
-    <details>
-        <summary>
-            .removeChild    //удалить DOM ноду
-        </summary>
+<details>
+    <summary>
+        classList   //Набор методов для управления классами
+    </summary>
+    
+
+</details>
+<details>
+    <summary>
+        .removeChild    //удалить DOM ноду
+    </summary>
 </details>
 <details>
         <summary>
@@ -373,6 +383,57 @@ Form events:
 
 document, window 
 
+### Атрибуты и сво-ва
+<details>
+    <summary>
+        getAttribute(name)
+    </summary>
+    
+`h1.getAttribute('id')      //получить id найденный в заголовке h1
+                            //getAttribute(name) - name - регистронезависимый`
+</details>
+<details>
+    <summary>
+        setAttribute(name, value)
+    </summary>
+    
+
+</details>
+<details>
+    <summary>
+        hasAttribute(name)
+    </summary>
+    
+
+</details>
+<details>
+    <summary>
+        removeAttribute(name)
+    </summary>
+    
+
+</details>
+<details>
+    <summary>
+        attributes        
+    </summary>
+    
+
+</details>
+### Оптимизация 
+<details>
+    <summary>
+        Измерение скорости работы скрипта(микросекундах)
+    </summary>
+    
+`var time = performance.now();
+ // некий код
+ time = performance.now() - time;
+ console.log('Время выполнения = ', time);`
+</details>
+
+* [Повышаем производительность клиентской части веб-приложения](https://xakep.ru/2014/07/22/speedup-client-javascript/)
+* [Измерение производительности функций в JavaScript](https://habr.com/ru/company/mailru/blog/272087/)
 ---
 Полезные ссылки:
 * [Современный учебник Javascript - Илья Кантор](https://learn.javascript.ru/) 

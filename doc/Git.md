@@ -249,7 +249,13 @@ git push -u origin master              - отправка репозитария
         Настройки ConEmu для работы с git 
     </summary>
     
-    
+Если не отображает русский текст в git'е через ConEmu([Подробнее тут](https://isqua.ru/blog/2017/05/15/cmder-charset/)):
+
+Startup > Environment >
+
+`set LC_ALL=ru_RU.UTF-8
+ set LANG=ru_RU.UTF-8`
+ 
 ![](./img/ConEmuSettingsFonts.jpg)
 ![](./img/ConEmuSettingsColors.jpg)
 ![](./img/ConEmuSettings.jpg)
